@@ -1,0 +1,16 @@
+apiVersion: skaffold/v1alpha5
+kind: Config
+build:
+  artifacts:
+  - image: myapp-a
+    context: myapp/a
+    sync:
+      'app/*': .
+  - image: myapp-b
+    context: myapp/b
+    sync:
+      'app/*': .
+deploy:
+  kubectl:
+    manifests:
+    - 'myapp/k8s/*.yaml'
