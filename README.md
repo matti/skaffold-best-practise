@@ -2,4 +2,4 @@
 
     skaffold dev
 
-[screencast](screencast.gif)
+![screencast](screencast.gif)
