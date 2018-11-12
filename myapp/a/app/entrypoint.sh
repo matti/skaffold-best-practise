@@ -1,6 +1,7 @@
 #!/usr/bin/env sh
 
 while true; do
-  echo "a: $(date)"
+  echo "b: $(date)"
   sleep 1
+  asodkfosdkf
 done
